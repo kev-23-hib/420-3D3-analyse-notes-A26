@@ -67,3 +67,20 @@ class Composite(Composant, ABC):
             "nb_etudiants": self.nb_etudiants(),
             "enfants": [e.to_dict() for e in self._enfants]
         }
+
+
+
+class Groupe(Composite):
+    pass
+
+class Session(Composite):
+    pass
+
+class Cours (Composite):
+    pass
+
+class Programme(Composite):
+    pass
+
+class Departement(Composite):
+    pass
